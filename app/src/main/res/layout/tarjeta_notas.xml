@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:elevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/img_foto"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                ></androidx.constraintlayout.utils.widget.ImageFilterView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Título"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"></TextView>
+
+                <TextView
+                    android:id="@+id/txt_resumen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resumen"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btn_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cambiar color"
+                android:textColor="@color/black"></Button>
+
+            <Button
+                android:id="@+id/btn_editar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Editar"
+                android:textColor="@color/black"
+                android:layout_marginLeft="5dp"></Button>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
